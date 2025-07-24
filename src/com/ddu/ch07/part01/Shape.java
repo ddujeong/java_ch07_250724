@@ -5,7 +5,7 @@ public class Shape { // 부모 클래스
 	int height;
 	String color; // 도형면의 색깔
 	
-	public int area() { // 도형의 면적
+	public double area() { // 도형의 면적
 		int area = width* height;
 		return area;
 	}

@@ -8,20 +8,16 @@ public class Animal {
 	// boolean tail; // 꼬리 유무
 	
 	public Animal() {
-		super();
-		// TODO Auto-generated constructor stub
+
 	}
 	public Animal(String name) {
-		super();
 		this.name = name;
 	}
 	public Animal (String sound, int legCount) {
-		super();
 		this.sound = sound;
 		this.legCount = legCount;
 	}
 	public Animal(String name, int age, String sound, int legCount) {
-		super();
 		this.name = name;
 		this.age = age;
 		this.sound = sound;

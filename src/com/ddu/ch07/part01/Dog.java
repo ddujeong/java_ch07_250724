@@ -2,25 +2,29 @@ package com.ddu.ch07.part01;
 
 public class Dog extends Animal {
 	String dogTail;
-	String color;
-	
-	public Dog() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Dog(String name, int age, String sound, int legCount) {
-		super(name, age, sound, legCount);
-		// TODO Auto-generated constructor stub
-	}
-	public Dog(String sound, int legCount) {
-		super(sound, legCount);
-		// TODO Auto-generated constructor stub
-	}
-	public Dog(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
 
+	public Dog() {
+		super();  // -> 부모 클래스의 생성자 호출
+	}
+	public Dog(String dogTail) {
+		super();
+		this.dogTail = dogTail;
+	}
+	
+	
+//	public Dog(String name, int age, String sound, int legCount) {
+//		super(name, age, sound, legCount);
+//	}
+//	public Dog(String sound, int legCount) {
+//		super(sound, legCount);
+//	}
+//	public Dog(String name) {
+//		super(name);
+//	}
+
+	public Dog(String name, int age) {
+		super(name, age);
+	}
 	public void dogRun() {
 		System.out.println("강아지 달리기");
 	}
